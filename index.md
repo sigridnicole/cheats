@@ -10,7 +10,7 @@ In powershell, navigate to pem file directory then execute the following command
 
 ```
 icacls.exe key.pem /reset
-icacls.exe key.pem /grant:r "$(env:username)"(r)"
+icacls.exe key.pem /grant:r "$($env:username):(r)"
 icacls.exe key.pem /inheritance:r
 ```
 
