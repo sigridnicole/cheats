@@ -68,4 +68,5 @@ pm2 delete hello
 [More info](https://pm2.io/)   ||  [Manage Python Processes with PM2](https://pm2.io/blog/2018/09/19/Manage-Python-Processes)
 
 
-
+** Install Python 3 on Ubuntu ** 
+[This](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) worked for me. 
