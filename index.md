@@ -71,3 +71,45 @@ pm2 delete hello
 **Install Python 3 on Ubuntu** 
 
 [This](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) worked for me. 
+
+
+
+
+
+### MongoDB Things
+
+
+**Create New Connection**
+This code snippet can support multiple database connections.
+
+```
+function makeNewConnection(dbName, uri) {
+
+  const db = mongoose.createConnection(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+
+  db.on('error', function (error) {
+    console.log(`${dbName} MongoDB :: connection ${this.name} ${JSON.stringify(error)}`);
+    db.close().catch(() => console.log(`MongoDB :: failed to close connection ${this.name}`));
+  });
+
+  db.on('connected', function () {
+    mongoose.set('debug', function (col, method, query, doc) {
+      console.log(`${dbName} MongoDB :: ${this.conn.name} ${col}.${method}(${JSON.stringify(query)},${JSON.stringify(doc)})`);
+    });
+    console.log(`${dbName} MongoDB :: connected ${this.name}`);
+  });
+
+  db.on('disconnected', function () {
+    console.log(`${dbName} MongoDB :: disconnected ${this.name}`);
+  });
+
+  return db;
+}
+
+const dbConnection = makeNewConnection('testDB', dbConfig.url);
+```
+
+
