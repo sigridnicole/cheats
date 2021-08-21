@@ -113,3 +113,12 @@ const dbConnection = makeNewConnection('testDB', dbConfig.url);
 ```
 
 
+
+
+### NodeJS Things
+
+
+**Host Images Using Express**
+app.use(express.static('folder location'));
+
+
