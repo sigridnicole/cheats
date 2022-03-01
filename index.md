@@ -1,13 +1,10 @@
-
 ## Welcome to Sigrid Cheats lol 🤣
 
 Personal Notes I know I will most likely forget. 
 
 ### Linux
 
-#### Linux
-
-**chmod 400 equivalent for Windows**
+#### chmod 400 equivalent for Windows
 
 In powershell, navigate to pem file directory then execute the following commands:
 
@@ -20,7 +17,7 @@ icacls.exe key.pem /inheritance:r
 For per command explanation, watch this [video](https://www.youtube.com/watch?v=P1erVo5X3Bs)
 
 
-**pm2**
+#### pm2
 
 PM2 is a production process manager for Node.js applications with a built-in load balancer. You can start any application (Node.js, Python, Ruby .. etc)
 
@@ -71,7 +68,7 @@ pm2 delete hello
 [More info](https://pm2.io/)   ||  [Manage Python Processes with PM2](https://pm2.io/blog/2018/09/19/Manage-Python-Processes)
 
 
-**Install Python 3 on Ubuntu** 
+####  Install Python 3 on Ubuntu
 
 [This](https://phoenixnap.com/kb/how-to-install-python-3-ubuntu) worked for me. 
 
@@ -82,7 +79,7 @@ pm2 delete hello
 ### MongoDB Things
 
 
-**Create New Connection**
+####  Create New Connection
 
 This code snippet can support multiple database connections.
 
@@ -122,7 +119,7 @@ const dbConnection = makeNewConnection('testDB', dbConfig.url);
 ### NodeJS Things
 
 
-**Host Images Using Express**
+####  Host Images Using Express
 
 app.use(express.static('folder location'));
 
@@ -130,14 +127,15 @@ app.use(express.static('folder location'));
 
 ### Git Things
 
-**Undo last pushed commit but keep changes in staging**
+####  Undo last pushed commit but keep changes in staging
 
 *This will rewrite git history - use with a grain of salt.*
 ```
 git reset --soft HEAD~1
 git push -f branch
 ```
-**Clean Push Using Git Stash**
+
+####  Clean Push Using Git Stash
 
 Applicable when working with forked repos
 
