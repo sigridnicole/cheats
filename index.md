@@ -81,6 +81,7 @@ pm2 delete hello
 
 
 **Create New Connection**
+
 This code snippet can support multiple database connections.
 
 ```
@@ -120,6 +121,7 @@ const dbConnection = makeNewConnection('testDB', dbConfig.url);
 
 
 **Host Images Using Express**
+
 app.use(express.static('folder location'));
 
 
