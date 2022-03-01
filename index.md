@@ -131,9 +131,10 @@ app.use(express.static('folder location'));
 **Undo last pushed commit but keep changes in staging**
 
 *This will rewrite git history - use with a grain of salt.*
+```
 git reset --soft HEAD~1
 git push -f branch
-
+```
 **Clean Push Using Git Stash**
 
 Applicable when working with forked repos
