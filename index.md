@@ -127,24 +127,30 @@ app.use(express.static('folder location'));
 ### Git Things
 
 **Undo last pushed commit but keep changes in staging**
+
 *This will rewrite git history - use with a grain of salt.*
 git reset --soft HEAD~1
 git push -f branch
 
 **Clean Push Using Git Stash**
+
 Applicable when working with forked repos
 
 *Goal*
+
 Push code from origin to upstream without extra merge commits. Like "rebasing" but for forked repos.
 
 *Note*
+
 Look for an easier version of these steps. 
 
 *Setup*
+
 Original Repo remote: upstream
 Forked Repo remote: origin
  
  *Instructions*
+ 
  Forked Repo: stash current changes
  ```
  git add .
