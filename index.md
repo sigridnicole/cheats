@@ -5,6 +5,8 @@ Personal Notes I know I will most likely forget.
 
 ### Linux
 
+#### Linux
+
 **chmod 400 equivalent for Windows**
 
 In powershell, navigate to pem file directory then execute the following commands:
