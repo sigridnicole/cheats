@@ -201,7 +201,7 @@ git push origin target-branch -f
 
 ```
 git config user.name "Mona Lisa"
-git config user.name
+git config user.email "mona@lisa.com"
 ```
 
 
