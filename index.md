@@ -192,3 +192,16 @@ git add .
 git commit
 git push origin target-branch -f
 ```
+
+
+
+#### Configure User name and email
+
+[Setting your Git username for a single repository](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git#setting-your-git-username-for-a-single-repository)
+
+```
+git config user.name "Mona Lisa"
+git config user.name
+```
+
+
