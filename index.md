@@ -205,3 +205,25 @@ git config user.email "mona@lisa.com"
 ```
 
 
+#### Batch Promises
+
+Source: [Processing promises in Batch](https://dev.to/woovi/processing-promises-in-batch-2le6)
+
+Example 1: Running code concurrently
+```
+const promiseA = asyncFnA();
+const promiseB = asyncFnB();
+
+const results = await Promise.all([promiseA, promiseB]);
+```
+
+Example 2: Running many promises at the same time.
+This may consume a large chuck of resources. If so check next example in article, to process promises by batch by adding a recurssion or something. 
+```
+const users = await User.find(); // return all users in the database
+const results = await Promise.all(users.map(async (user) => processUser(user));
+```
+
+
+
+
