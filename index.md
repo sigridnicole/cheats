@@ -225,5 +225,18 @@ const results = await Promise.all(users.map(async (user) => processUser(user));
 ```
 
 
+### Docker Things
+
+#### Start a pg docker service
+
+```
+docker run --name postgresql -e POSTGRES_USER=local-pg -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
+```
+####  Start a redis service
+
+```
+docker run --name local-redis -p 6379:6379 -d redis
+```
+
 
 
