@@ -125,6 +125,19 @@ app.use(express.static('folder location'));
 
 
 
+
+
+### Python Things
+
+#### Install Packages without pip
+```
+python -m pip install [packagename]
+
+```
+
+
+
+
 ### Git Things
 
 ####  Undo last pushed commit but keep changes in staging
@@ -237,16 +250,5 @@ docker run --name postgresql -e POSTGRES_USER=local-pg -e POSTGRES_PASSWORD=admi
 ```
 docker run --name local-redis -p 6379:6379 -d redis
 ```
-
-
-
-### Python Things
-
-#### Install Packages without pip
-```
-python -m pip install [packagename]
-
-```
-
 
 
